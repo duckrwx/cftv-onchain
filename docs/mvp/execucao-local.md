@@ -136,3 +136,34 @@ O MVP local ja demonstra:
 
 Executar a mesma ancoragem na Sepolia usando o contrato `CftvCustodyAnchor`.
 
+---
+
+# Verificacao on-chain Sepolia
+
+Depois de ancorar via Remix ou script, validar se o contrato na Sepolia contem os mesmos valores do pacote local:
+
+```text
+SEPOLIA_RPC_URL=https://ethereum-sepolia-rpc.publicnode.com npm run verify:sepolia
+```
+
+Resultado esperado:
+
+```text
+status: ONCHAIN_MATCH
+cameraId: true
+captureStart: true
+captureEnd: true
+packageRoot: true
+manifestHash: true
+segmentCount: true
+status: true
+exists: true
+```
+
+Relatorio gerado:
+
+```text
+reports/onchain_verification_report.json
+```
+
+Isso demonstra que a evidencia local validada pelo gateway corresponde ao compromisso criptografico gravado na Sepolia.

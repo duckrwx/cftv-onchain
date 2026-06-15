@@ -7,7 +7,8 @@
     "test": "hardhat test",
     "deploy:sepolia": "hardhat run scripts/deploy-anchor.js --network sepolia",
     "anchor:sepolia": "hardhat run scripts/anchor-package.js --network sepolia",
-    "read:sepolia": "hardhat run scripts/read-anchor.js --network sepolia"
+    "read:sepolia": "hardhat run scripts/read-anchor.js --network sepolia",
+    "verify:sepolia": "hardhat run scripts/verify-onchain-anchor.js --network sepolia"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
